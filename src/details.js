@@ -15,7 +15,6 @@ const Details = ({ match }) => {
         const id = match.params.id;
         const data = await db.getProductById(id);
         setItem(data);
-        console.log(data);
     }
 
     return (
